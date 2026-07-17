@@ -20,8 +20,8 @@ test("browser launch",async () => {
     // launch webkit browser page
     const webkitPage = await webkitContext.newPage()
     const flipKart = await webkitPage.goto("https://www.flipkart.com/") 
-    console.log("Webkit Browser:",await page.title());
-    console.log("Webkit Browser:",page.url());
+    console.log("Webkit Browser:",await webkitPage.title());
+    console.log("Webkit Browser:",webkitPage.url());
 
     
 
